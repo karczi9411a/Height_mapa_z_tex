@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MUCHA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MUCHA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/Programy/CodeBlocks/MinGW/include/" />
+					<Add directory="C:/Users/Karczi/Desktop/glut-3.7.6-bin" />
+					<Add directory="C:/Users/Karczi/Desktop/glew-2.0.0/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lOpenGL32" />
+					<Add option="-lfreeglut" />
+					<Add option="-lglu32" />
+					<Add option="-lSOIL" />
+					<Add library="glew32s" />
+					<Add directory="D:/Programy/CodeBlocks/MinGW/lib/" />
+					<Add directory="C:/Users/Karczi/Desktop/glut-3.7.6-bin" />
+					<Add directory="C:/Users/Karczi/Desktop/glew-2.0.0/lib/Release/Win32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MUCHA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/Programy/CodeBlocks/MinGW/include/" />
+			<Add directory="C:/Dev/glew-2.0.0/include" />
+			<Add directory="C:/Dev/glut-3.7.6-bin" />
+		</Compiler>
+		<Linker>
+			<Add library="glew32s" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="glut32" />
+			<Add directory="D:/Programy/CodeBlocks/MinGW/lib/" />
+			<Add directory="C:/Dev/glew-2.0.0/lib/Release/Win32" />
+			<Add directory="C:/Dev/glut-3.7.6-bin" />
+		</Linker>
+		<Unit filename="imageloader.cpp" />
+		<Unit filename="imageloader.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
